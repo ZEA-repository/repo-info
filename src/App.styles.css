@@ -1,0 +1,70 @@
+#root,
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+ul,
+li {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0a3c68;
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+}
+a[target='_blank']:after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  margin: 0 3px 0 5px;
+}
+
+a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.gap5 {
+  gap: 5px;
+}
+
+.gap15 {
+  gap: 15px;
+}
+
+.gap10 {
+  gap: 10px;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.mt16 {
+  margin-top: 1rem;
+}
+
+.mb16 {
+  margin-bottom: 1rem;
+}

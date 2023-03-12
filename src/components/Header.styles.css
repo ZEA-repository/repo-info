@@ -1,0 +1,19 @@
+.header {
+  line-height: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 3px #000000a8;
+}
+
+.nav_links {
+  display: flex;
+  gap: 0.3rem;
+}
+.link {
+  padding: 0.5rem;
+  font-weight: 500;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #515960;
+}
