@@ -9,11 +9,11 @@ export default function MainLayout() {
   ]
 
   return (
-    <div>
+    <>
       <HeaderMenu links={links} />
       <main className='app_main'>
         <Outlet />
       </main>
-    </div>
+    </>
   )
 }
