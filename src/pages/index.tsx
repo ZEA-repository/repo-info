@@ -9,13 +9,13 @@ export function HomePage() {
   const [params, setParams] = useSearchParams()
   const query = params.get('query')
   return (
-    <>
+    <section>
       <Search
         initialValue={query || ''}
         onSubmit={(query) => setParams(query ? { query } : {})}
       />
       <SearchResults />
-    </>
+    </section>
   )
 }
 

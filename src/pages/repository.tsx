@@ -35,7 +35,7 @@ export const RepositoryPage = () => {
   const user: Owner = repo?.owner
 
   return (
-    <section>
+    <>
       <div className='flex gap15 repository'>
         <div className='flex col'>
           <figure>
@@ -100,6 +100,6 @@ export const RepositoryPage = () => {
           </table>
         </div>
       </div>
-    </section>
+    </>
   )
 }
