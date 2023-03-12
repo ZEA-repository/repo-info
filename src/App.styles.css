@@ -68,3 +68,9 @@ a:active {
 .mb16 {
   margin-bottom: 1rem;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}

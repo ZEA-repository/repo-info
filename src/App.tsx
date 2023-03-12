@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import { HomePage } from '@/pages'
 import { MobxExamplePage } from '@/pages/store-example'
 import { RepositoryPage } from '@/pages/repository'
+import { NothingFoundBackground } from '@/pages/404'
 import { BrowserRouter } from 'react-router-dom'
 import './App.styles.css'
 
@@ -15,6 +16,7 @@ const App = observer(() => {
           <Route index element={<HomePage />} />
           <Route path='store-example' element={<MobxExamplePage />} />
           <Route path='repository/:owner/:name' element={<RepositoryPage />} />
+          <Route path='*' element={<NothingFoundBackground />} />
         </Route>
       </Routes>
     </BrowserRouter>
