@@ -15,7 +15,7 @@ $ cd repo-info && npm install
 ▻ Create a file called `.env.local` in the root of project:
 
 ```
-VITE_GITHUB_TOKEN='personal_access token'
+VITE_GITHUB_TOKEN='personal_access_token'
 ```
 
 ▻ Run project.
