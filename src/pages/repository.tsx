@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { useQuery } from '@apollo/client'
 import { REPO_DETAILS } from '@/gql/repoDetails'
-
+import { CircleIcon } from '@/components/CircleIcon'
 import './repository.styles.css'
 
 interface Owner {
@@ -55,23 +55,12 @@ export const RepositoryPage = () => {
             <ul className='flex gap5 wrap'>
               {repo.languages?.nodes.map((language) => (
                 <li key={language.id}>
-                  <svg
+                  <CircleIcon
                     style={{
                       fill: language.color,
                       marginBottom: '-2px',
                     }}
-                    aria-hidden='true'
-                    height='16'
-                    viewBox='0 0 16 16'
-                    version='1.1'
-                    width='16'
-                    data-view-component='true'
-                  >
-                    <path
-                      fillRule='evenodd'
-                      d='M8 4a4 4 0 100 8 4 4 0 000-8z'
-                    ></path>
-                  </svg>
+                  />
                   {language.name}
                 </li>
               ))}
