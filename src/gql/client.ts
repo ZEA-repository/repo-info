@@ -22,7 +22,7 @@ const authLink = setContext((_, { headers }) => {
 })
 const cache = new InMemoryCache();
 
-await persistCache({
+persistCache({
   cache,
   storage: new LocalStorageWrapper(window.localStorage),
 });

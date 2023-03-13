@@ -17,6 +17,9 @@ export const HeaderMenu: React.FC<HeaderResponsiveProps> = ({ links }) => {
             {link.label}
           </Link>
         ))}
+        <a href='https://github.com/login/oauth/authorize?scope=public_repo&client_id=e4a6ce07e4dc3e8de2a7'>
+          Login via Github
+        </a>
       </nav>
     </header>
   )

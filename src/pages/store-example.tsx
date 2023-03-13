@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react-lite'
 import { useStore } from '@/hooks/useStore'
 
-export const MobxExamplePage = observer(() => {
+export const StoreExamplePage = observer(() => {
   const {
     rootStore: { ProductStore },
   } = useStore()
