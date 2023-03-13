@@ -17,7 +17,15 @@ export const HeaderMenu: React.FC<HeaderResponsiveProps> = ({ links }) => {
             {link.label}
           </Link>
         ))}
+        <form
+          style={{ display: 'inline' }}
+          action='https://github.com/login/oauth/authorize'
+          method='get'
+        >
+          <button>Login via Github</button>
+        </form>
       </nav>
     </header>
   )
 }
+https:///ZEA-repository.github.io/repo-info/pages
