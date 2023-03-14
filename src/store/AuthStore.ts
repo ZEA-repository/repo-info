@@ -51,6 +51,7 @@ export class AuthStore {
   }
   setToken(token: string) {
     localStorage.setItem("accessToken", token);
-    this.token = token
+    setTimeout(() => this.token = token, 100)
+
   }
 }
