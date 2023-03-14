@@ -15,7 +15,7 @@ export const Search: React.FC<{
       }}
     >
       <label>
-        Search Repositories:
+        Search Repositories:{' '}
         <input
           type='text'
           placeholder='github repository name'

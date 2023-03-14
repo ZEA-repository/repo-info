@@ -51,7 +51,9 @@ export const RepositoryPage = () => {
         <div className='flex col gap15'>
           <div>
             <h1>{name}</h1>
-            <a href={user.url}>{owner}</a>
+            <a href={user.url} target='_blank'>
+              {owner}
+            </a>
             <ul className='flex gap5 wrap'>
               {repo.languages?.nodes.map((language) => (
                 <li key={language.id}>
