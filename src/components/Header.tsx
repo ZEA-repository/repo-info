@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
-import './Header.styles.css'
 import { observer } from 'mobx-react-lite'
 import { useStore } from '@/hooks/useStore'
 import { useEffect } from 'react'
+import './Header.styles.css'
+
 interface HeaderResponsiveProps {
   links: { link: string; label: string }[]
 }

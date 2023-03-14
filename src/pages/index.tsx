@@ -7,9 +7,13 @@ import { VIEWER_REPOS } from '@/gql/viewerRepos'
 import { useStore } from '@/hooks/useStore'
 import { observer } from 'mobx-react-lite'
 
-export function HomePage() {
+export const HomePage = observer(() => {
+  const {
+    rootStore: { AuthStore },
+  } = useStore()
   const [params, setParams] = useSearchParams()
   const query = params.get('query')
+  if (!AuthStore.token) return <p>Please, login via Github</p>
   return (
     <section>
       <Search
@@ -19,7 +23,7 @@ export function HomePage() {
       <SearchResults />
     </section>
   )
-}
+})
 
 const SearchResults: React.FC = observer(() => {
   const {
@@ -29,7 +33,6 @@ const SearchResults: React.FC = observer(() => {
   const query = params.get('query')
   const after = params.get('after')
   const { loading, error, data, pageInfo } = fetchData(query, after)
-  if (!AuthStore.token) return <p>Please, login via Github</p>
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error: {error.message}</p>
   return (
