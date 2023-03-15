@@ -26,9 +26,6 @@ export const HomePage = observer(() => {
 })
 
 const SearchResults: React.FC = observer(() => {
-  const {
-    rootStore: { AuthStore },
-  } = useStore()
   const [params, setParams] = useSearchParams()
   const query = params.get('query')
   const after = params.get('after')
